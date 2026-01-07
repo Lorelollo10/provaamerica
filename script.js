@@ -53,6 +53,10 @@ window.addEventListener("load", () => {
     return;
   }
 
+  if (playButton) {
+    playButton.hidden = false;
+  }
+
   const attemptPlay = () => {
     const playPromise = audio.play();
     if (playPromise) {
